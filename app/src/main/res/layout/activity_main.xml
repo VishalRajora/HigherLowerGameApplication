@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+  >
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:src="@drawable/higher"
+     android:scaleType="fitXY"
+     />
+
+ <TextView
+     android:layout_marginTop="80sp"
+     android:id="@+id/tv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:text="  I Am Thinking A Number B/W 1 To 20"
+     android:textStyle="bold"
+     android:textSize="18dp"
+     android:textColor="#fafafa"/>
+
+
+ <TextView
+     android:layout_marginTop="10dp"
+     android:textColor="#fafafa"
+     android:id="@+id/tv1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="   Can You Guess It"
+     android:textStyle="bold"
+     android:layout_centerHorizontal="true"
+     android:textSize="30dp"
+     android:layout_below="@+id/tv"
+     android:layout_marginLeft="30dp"/>
+
+ <EditText
+     android:layout_marginTop="50sp"
+     android:textColor="#fafafa"
+     android:inputType="number"
+     android:id="@+id/et"
+     android:layout_width="match_parent"
+     android:layout_marginRight="20dp"
+     android:layout_marginLeft="20dp"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/tv1"
+     android:hint="Enter Num"/>
+
+ <Button
+     android:layout_marginTop="30sp"
+     android:textColor="#00838f"
+     android:background="#fff"
+     android:id="@+id/btn"
+     android:onClick="guess"
+     android:textSize="15dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/et"
+     android:layout_centerHorizontal="true"
+
+     android:text="Guess"
+     android:textStyle="bold"/>
+
+</RelativeLayout>
